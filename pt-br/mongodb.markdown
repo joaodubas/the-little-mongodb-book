@@ -7,71 +7,71 @@
 
 ## Sobre este Livro ##
 
-### Licença ###
-O livro Pequeno Livro do MongoDB é licenciado sob a licença Atribuição-NãoComercial 3.0 *Unported*. **Você não deve ter pago por este livro.**
+### Licen√ßa ###
+O livro Pequeno Livro do MongoDB √© licenciado sob a licen√ßa Atribui√ß√£o-N√£oComercial 3.0 *Unported*. **Voc√™ n√£o deve ter pago por este livro.**
 
-Você é basicamente livre para copiar, distribuir, modificar ou apresentar o livro. Contudo, eu peço que sempre atribua o livro a mim, Karl Seguin e não o utilize para propósitos comerciais.
+Voc√™ √© basicamente livre para copiar, distribuir, modificar ou apresentar o livro. Contudo, eu pe√ßo que sempre atribua o livro a mim, Karl Seguin e n√£o o utilize para prop√≥sitos comerciais.
 
-Você pode ver o texto completo da licença em:
+Voc√™ pode ver o texto completo da licen√ßa em:
 
 <http://creativecommons.org/licenses/by-nc/3.0/legalcode>
 
 ### Sobre o Autor ###
-Karl Seguin é um desenvolvedor com experência em diversos campos e tecnologias. Ele é um *expert* em .Net e desenvolvedor Ruby. Semi-ativo contribuidor em projetos *OSS*, um escritor técnico e palestrante ocasional. A respeito do MongoDB, ele foi um *core contributor* da biblioteca C# do MongoDB NoRM, escreveu o tutorial interativo [mongly](http://mongly.com), bem como o [Mongo Web Admin](https://github.com/karlseguin/Mongo-Web-Admin). Seu serviço gratuíto para desenvolvedores de jogos casuais, [mogade.com](http://mogade.com), roda em MongoDB.
+Karl Seguin √© um desenvolvedor com exper√™ncia em diversos campos e tecnologias. Ele √© um *expert* em .Net e desenvolvedor Ruby. Semi-ativo contribuidor em projetos *OSS*, um escritor t√©cnico e palestrante ocasional. A respeito do MongoDB, ele foi um *core contributor* da biblioteca C# do MongoDB NoRM, escreveu o tutorial interativo [mongly](http://mongly.com), bem como o [Mongo Web Admin](https://github.com/karlseguin/Mongo-Web-Admin). Seu servi√ßo gratu√≠to para desenvolvedores de jogos casuais, [mogade.com](http://mogade.com), roda em MongoDB.
 
 Seu blog pode ser visto em <http://openmymind.net> e seus tweets via [@karlseguin](http://twitter.com/karlseguin).
 
 ### Agradecimentos ###
-Um agradecimento especial a [Perry Neal](http://twitter.com/perryneal) por me emprestar seus olhos, mente e paixão. Você me proveu com ajuda *invaluable*. Muito obrigado.
+Um agradecimento especial a [Perry Neal](http://twitter.com/perryneal) por me emprestar seus olhos, mente e paix√£o. Voc√™ me proveu com ajuda *invaluable*. Muito obrigado.
 
-### Versão Mais Recente ###
-A versão mais recente deste livro está disponível em:
+### Vers√£o Mais Recente ###
+A vers√£o mais recente deste livro est√° dispon√≠vel em:
 
 <http://github.com/karlseguin/the-little-mongodb-book>.
 
 \clearpage
 
-## Introdução ##
- > Não é minha culpa se os capítulos são curtos, MongoDB é muito fácil de se aprender.
+## Introdu√ß√£o ##
+ > N√£o √© minha culpa se os cap√≠tulos s√£o curtos, MongoDB √© muito f√°cil de se aprender.
 
-Geralmente é dito que a tecnologia sofre alterações num ritmo acelerado. É verdade que existe uma lista infindável de novas tecnologias e técnicas sendo lançadas. Contudo, há muito tempo sou da opinião de que as tecnologias fundamentais, utilizadas por programadores, move-se num ritmo mais lento. Seria possível passar anos aprendendo pouco e ainda manter-se relevante. O que é impressionante, porém, é a velocidade na qual tecnologias *established* são trocadas. Aparentemente, da noite para o dia, tecnologias de longa data são ameaçadas por alterações no foco do desenvolvedor.
+Geralmente √© dito que a tecnologia sofre altera√ß√µes num ritmo acelerado. √â verdade que existe uma lista infind√°vel de novas tecnologias e t√©cnicas sendo lan√ßadas. Contudo, h√° muito tempo sou da opini√£o de que as tecnologias fundamentais, utilizadas por programadores, move-se num ritmo mais lento. Seria poss√≠vel passar anos aprendendo pouco e ainda manter-se relevante. O que √© impressionante, por√©m, √© a velocidade na qual tecnologias *established* s√£o trocadas. Aparentemente, da noite para o dia, tecnologias de longa data s√£o amea√ßadas por altera√ß√µes no foco do desenvolvedor.
 
-Nada pode ser mais representativo desta mudança repentina de foco, que o progresso das tecnologias NoSQL em relação à madura tecnologia dos bancos de dados relacionadis. Parece que em um momento a web era servida por uns poucos *RDBM* e na seqüência, cinco ou mais soluções NoSQL estabeleceram-se como soluções plausíveis.
+Nada pode ser mais representativo desta mudan√ßa repentina de foco, que o progresso das tecnologias NoSQL em rela√ß√£o √† madura tecnologia dos bancos de dados relacionadis. Parece que em um momento a web era servida por uns poucos *RDBM* e na seq√º√™ncia, cinco ou mais solu√ß√µes NoSQL estabeleceram-se como solu√ß√µes plaus√≠veis.
 
-Apesar destas transições pareceram acontecer do dia pra noite, na realidade é que elas levam anos para tornarem-se práticas aceitas. O entusiamo inicial é liderador por um pequeno grupo de desenvolvedores e companhias. Soluções são refinadas, lições aprendidas e vendo que a nova tecnologia perseverá, outros lentamento a experimentarão. De novo, isto é particularmente verdadeiro no caso do NoSQL, onde muitas soluções não são substitutas para as soluções tradicionais de armazenamento, ao invés disso, tratam de uma necessidade específica que pode-se obter em relação ao modelo tradicional.
+Apesar destas transi√ß√µes pareceram acontecer do dia pra noite, na realidade √© que elas levam anos para tornarem-se pr√°ticas aceitas. O entusiamo inicial √© liderador por um pequeno grupo de desenvolvedores e companhias. Solu√ß√µes s√£o refinadas, li√ß√µes aprendidas e vendo que a nova tecnologia persever√°, outros lentamento a experimentar√£o. De novo, isto √© particularmente verdadeiro no caso do NoSQL, onde muitas solu√ß√µes n√£o s√£o substitutas para as solu√ß√µes tradicionais de armazenamento, ao inv√©s disso, tratam de uma necessidade espec√≠fica que pode-se obter em rela√ß√£o ao modelo tradicional.
 
-Tendo dito tudo isso, a primeira coisa que faremos é explicar o significado de NoSQL. É um termo bastante amplo que possui diversas interpretações para diferentes pessoas. Pessoalmente, eu a utilizo aplamenta para falar sobre um sistema que tem papel no armazenamento de dados. Em outras palavras, NoSQL (novamente, pra mim), é a acreditar que sua camada de persistência, não é necessariamente a responsabilidade de um único sistema. Onde os fabricantes de bancos de dados relacionais, historicamente, têm tentado posicionais seus softwares como soluções para todos os problemas, NoSQL pende para unidades menores de responsábilidade onde a melhor ferramenta para um determinado trabalho pode ser alavancada. Sendo assim, a sua *stack* NoSQL pode ainda conter um banco de dados relacional, como o MySQL, mas também tem o Redis como a persistência de procura em algumas partes específicas do sistema, bem como o Hadoop para o processamento de dados intenso. De forma simples, NoSQL é sobre estar aberto e atento às alternativas a respeitos dos padrões e ferramentas existentes e recentes para gerenciar seus dados.
+Tendo dito tudo isso, a primeira coisa que faremos √© explicar o significado de NoSQL. √â um termo bastante amplo que possui diversas interpreta√ß√µes para diferentes pessoas. Pessoalmente, eu a utilizo aplamenta para falar sobre um sistema que tem papel no armazenamento de dados. Em outras palavras, NoSQL (novamente, pra mim), √© a acreditar que sua camada de persist√™ncia, n√£o √© necessariamente a responsabilidade de um √∫nico sistema. Onde os fabricantes de bancos de dados relacionais, historicamente, t√™m tentado posicionais seus softwares como solu√ß√µes para todos os problemas, NoSQL pende para unidades menores de respons√°bilidade onde a melhor ferramenta para um determinado trabalho pode ser alavancada. Sendo assim, a sua *stack* NoSQL pode ainda conter um banco de dados relacional, como o MySQL, mas tamb√©m tem o Redis como a persist√™ncia de procura em algumas partes espec√≠ficas do sistema, bem como o Hadoop para o processamento de dados intenso. De forma simples, NoSQL √© sobre estar aberto e atento √†s alternativas a respeitos dos padr√µes e ferramentas existentes e recentes para gerenciar seus dados.
 
-Você pode estar pensado onde MongoDB se encaixa em tudo isso. Como um banco de dados orientado a documentos, Mongo é uma solução NoSQL mais genérica. Deve ser visto como uma alternativa aos bancos de dados relacionais. Assim como os banco de dados relacionais, também pode beneficiar-se ao ser pareado com algumas soluções NoSQL mais especializadas. MongoDB tem vantagens e desvantages, as quais iremos cobrir em partes mais avançadas deste livro.
+Voc√™ pode estar pensado onde MongoDB se encaixa em tudo isso. Como um banco de dados orientado a documentos, Mongo √© uma solu√ß√£o NoSQL mais gen√©rica. Deve ser visto como uma alternativa aos bancos de dados relacionais. Assim como os banco de dados relacionais, tamb√©m pode beneficiar-se ao ser pareado com algumas solu√ß√µes NoSQL mais especializadas. MongoDB tem vantagens e desvantages, as quais iremos cobrir em partes mais avan√ßadas deste livro.
 
-Como você pode ter percebido, usamos os termos MongoDB e Mongo alternadamente (*interchangeably*).
+Como voc√™ pode ter percebido, usamos os termos MongoDB e Mongo alternadamente (*interchangeably*).
 
-## Getting Started ##
-Most of this book will focus on core MongoDB functionality. We'll therefore rely on the MongoDB shell. While the shell is useful to learn as well as being a useful administrative tool, your code will use a MongoDB driver.
+## Iniciando ##
+A maior parte deste livro focar√° nas funcionalidades *core* do MongoDB. Sendo assim, iremos utilizamr o shell do MongoDB. Mesmo o shell sendo √∫til para aprendizado, bem como, para atividades administrativas, seu c√≥digo usar√° um driver do MongoDB.
 
-This does bring up the first thing you should know about MongoDB: its drivers. MongoDB has a [number of official drivers](http://www.mongodb.org/display/DOCS/Drivers) for various languages. These drivers can be thought of as the various database drivers you are probably already familiar with. On top of these drivers, the development community has built more language/framework-specific libraries. For example, [NoRM](https://github.com/atheken/NoRM) is a C# library which implements LINQ, and [MongoMapper](https://github.com/jnunemaker/mongomapper) is a Ruby library which is ActiveRecord-friendly. Whether you choose to program directly against the core MongoDB drivers or some higher-level library is up to you. I point this out only because many people new to MongoDB are confused as to why there are both official drivers and community libraries - the former generally focuses on core communication/connectivity with MongoDB and the latter with more language and framework specific implementations.
+Isso tr√°s a tona a primeira coisa que voc√™ deve saber sobre MongoDB: seus drivers. MongoDB tem um [n√∫mero oficial de drivers](http://www.mongodb.org/display/DOCS/Drivers) para v√°rias linguagens. Esses drivers podem ser entendidos como os diversos drivers de banco de dados aos quais voc√™ j√° deve estar familiarizado. Em cima destes drivers, a comunidade de desenvolvedores criou mais bibliotecas para outras linguagens/frameworks. Por exemplo, [NoRM](https://github.com/atheken/NoRM) √© uma biblioteca C# quem implementa LINQ e [MongoMapper](https://github.com/jnunemaker/mongomapper) √© uma biblioteca Ruby que √© similar ao ActiveRecord. Pode-se programar diretamente com os drivers do MongoDB ou alguma biblioteca de maior n√≠vel, esta √© uma decis√£o sua. Aponto isso somente porque muitas pessoas novas ao MongoDB ficam confusas em rela√ß√£o √† existencia tanto de drivers oficiais e bibliotecas da comunidade: o primeiro geralmente foca na comunica√ß√£o/conectividade com o MongoDB, por sua vez, o segundo tem √™nfase em implementa√ß√µes espec√≠ficas da linguagem ou framework.
 
-As you read through this, I encourage you to play with MongoDB to replicate what I demonstrate as well as to explore questions that might come up on your own. It's easy to get up and running with MongoDB, so let's take a few minutes now to set things up. 
+Conforme seguimos, encorajo voc√™ a utilizar o MongoDB para replicar o que foi demonstrado, bem como explorar quest√µes que possam surgir naturalmente. √â bastante simples instalar o MongoDB, vamos tomar alguns minutos para preparar tudo.
 
-1. Head over to the [official download page](http://www.mongodb.org/downloads) and grab the binaries from the first row (the recommended stable version) for your operating system of choice. For development purposes, you can pick either 32-bit or 64-bit.
+1. V√° para a [p√°gina oficial de download](http://www.mongodb.org/downloads) e pegue os bin√°rios da primeira linha (a vers√£o est√°vel recomendada) para o sistema operacional de sua escolha. Para prop√≥sitos de desenvolvimento, voc√™ pode baixar tanto 32-bit quanto 64-bit.
 
-2. Extract the archive (wherever you want) and navigate to the `bin` subfolder. Don't execute anything just yet, but know that `mongod` is the server process and `mongo` is the client shell - these are the two executables we'll be spending most of our time with. 
+2. Extraia o arquivo (onde voc√™ quiser) e navegue at√© a pasta `bin`. N√£o execute nada ainda, mas saibe que `mongod` √© o processo do servidor e `mongo` √© o shell do cliente - estes s√£o os dois execut√°veis nos quais passaremos a maior parte do tempo.
 
-3. Create a new text file in the `bin` subfolder named `mongodb.config`
+3. Crie um novo arquivo de texto na pasta `bin` chamado `mongodb.config`
 
-4. Add a single line to your mongodb.config: `dbpath=PATH_TO_WHERE_YOU_WANT_TO_STORE_YOUR_DATABASE_FILES`. For example, on Windows you might do `dbpath=c:\mongodb\data` and on Linux you might do `dbpath=/etc/mongodb/data`. 
+4. Adicione uma linha no mongodb.config: `dbpath=CAMINHO_PARA_ONDE_VOC√ä_DESEJA_ARMAZENAR_SEUS_ARQUIVOS_DO_BANCO_DE_DADOS`. Por exemplo, no Windows voc√™ pode fazer `dbpath=c:\mongodb\data` e no Linux √© poss√≠vel fazer `dbpath=/etc/mongodb/data`.
 
-5. Make sure the `dbpath` you specified exists
+5. Tenha certeza de que o `dbpath` que voc√™ espec√≠ficou existe.
 
-6. Launch mongod with the `--config /path/to/your/mongodb.config` parameter.
+6. Execute mongod com o par√¢metro `--config /caminho/para/seu/mongodb.config`.
 
-As an example for Windows users, if you extracted the downloaded file to `c:\mongodb\` and you created `c:\mongodb\data\` then within `c:\mongodb\bin\mongodb.config` you would specify `dbpath=c:\mongodb\data\`. You could then launch `mongod` from a command prompt via `c:\mongodb\bin\mongod --config c:\mongodb\bin\mongodb.config`.
+Como um exemplo para os usu√°rios de Windows, se voc√™ extraiu o arquivo baixado em `c:\mongodb\` e criou `c:\mongodb\data\` ent√£o dentro de `c:\mongodb\bin\mongodb.config` voc√™ dever√£ especificar `dbpath=c:\mongodb\data\`. Ent√£o voc√™ pode executar `mongod` a partir do prompt de comando via `c:\mongodb\bin\mongod --config c:\mongodb\bin\mongodb.config`.
 
-Feel free to add the `bin` folder to your path to make all of this less verbose. MacOSX and Linux users can follow almost identical directions. The only thing you should have to change are the paths.
+Sinta-se a vontade para adicionar a pasta `bin` ao seu *path* para tornar os comandos mais curtos. Usu√°rios do MacOSX e Linux podem seguir instru√ß√µes parecidas. A √∫nica coisa que voc√™s devem alterar s√£o os caminhos.
 
-Hopefully you now have MonogDB up and running. If you get an error, read the output carefully - the server is quite good at explaining what's wrong.
+Com sucesso, voc√™ deve ter um MongoDB pronto para ser utilizado. Caso voc√™ receba uma mensagem de erro, leia o console cuidadosamente - o servidor √© muito bom ao explicar o que houve de errado.
 
-You can now launch `mongo` (without the *d*) which will connect a shell to your running server. Try entering `db.version()` to make sure everything's working as it should. Hopefully you'll see the version number you installed.
+Voc√™ pode agorar executar `mongo` (sem o *d*) que conectar√° um shell √† sua inst√¢ncia do servidor. Digite `db.version()` para assegurar-se de que tudo esta funcionando como deveria. Caso tudo esteja correto, voc√™ ver√° o n√∫mero da vers√£o instalada.
 
 \clearpage
 
